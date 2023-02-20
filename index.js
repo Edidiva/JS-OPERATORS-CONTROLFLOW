@@ -33,7 +33,7 @@ function findNearestPowerOf2(num) {
     firstNumber *= 2;
     console.log(firstNumber, secondNumber)
   }
-  if (secondNumber-num < firstNumber - num) {
+  if (num-secondNumber <= firstNumber - num) {
     pwr = secondNumber;
   } else {
     pwr = firstNumber;
@@ -41,4 +41,4 @@ function findNearestPowerOf2(num) {
   console.log(`The number ${pwr} is the power of 2 nearest to ${num}.`);
 }
 
-findNearestPowerOf2(40)
+findNearestPowerOf2(3)
