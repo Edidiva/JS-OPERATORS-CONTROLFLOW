@@ -24,7 +24,7 @@ else if (classGroup.toUpperCase() === "ARTS") {
 
 
 //nearest number of power 2
-function findNearestPowerOf2(num) {
+function nearestPowerOf2(num) {
   let pwr;
   let firstNumber= 2;
   let secondNumber;
@@ -41,4 +41,4 @@ function findNearestPowerOf2(num) {
   console.log(`The number ${pwr} is the power of 2 nearest to ${num}.`);
 }
 
-findNearestPowerOf2(3)
+nearestPowerOf2(3)
