@@ -75,4 +75,7 @@ console.log(result); // 29
 
 
 N0 4
-These are the courses you will be offering: Government, Economics, Literature, History, English, Mathematics.
+for (let i = 1; i < 20; i+=7) {
+  console.log(i); 
+}
+//1, 8, 15

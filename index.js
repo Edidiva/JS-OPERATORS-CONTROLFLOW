@@ -20,3 +20,25 @@ else if (classGroup.toUpperCase() === "ARTS") {
  else {
   console.log(`Choose a valid class group. You will be offering these general courses: ${General_Subjects}.`);
 }
+
+
+
+//nearest number of power 2
+function findNearestPowerOf2(num) {
+  let pwr = 1;
+  let firstNumber= 2;
+  let secondNumber;
+  while (firstNumber <= num) {
+    secondNumber = firstNumber;
+    firstNumber *= 2;
+    console.log(firstNumber, secondNumber)
+  }
+  if (secondNumber-num < firstNumber - num) {
+    pwr = secondNumber;
+  } else {
+    pwr = firstNumber;
+  }
+  console.log(`The number ${pwr} is the power of 2 nearest to ${num}.`);
+}
+
+findNearestPowerOf2(40)
